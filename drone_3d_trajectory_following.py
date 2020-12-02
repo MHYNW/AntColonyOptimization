@@ -70,11 +70,11 @@ def quad_sim(x_c, y_c, z_c):
 
     while True:
         while t <= T:
-            # des_x_pos = calculate_position(x_c[i], t)
-            # des_y_pos = calculate_position(y_c[i], t)
+            des_x_pos = calculate_position(x_c[i], t)
+            des_y_pos = calculate_position(y_c[i], t)
             des_z_pos = calculate_position(z_c[i], t)
-            # des_x_vel = calculate_velocity(x_c[i], t)
-            # des_y_vel = calculate_velocity(y_c[i], t)
+            des_x_vel = calculate_velocity(x_c[i], t)
+            des_y_vel = calculate_velocity(y_c[i], t)
             des_z_vel = calculate_velocity(z_c[i], t)
             des_x_acc = calculate_acceleration(x_c[i], t)
             des_y_acc = calculate_acceleration(y_c[i], t)
@@ -204,7 +204,6 @@ def main():
         x_coeffs[i] = traj.x_c
         y_coeffs[i] = traj.y_c
         z_coeffs[i] = traj.z_c
-
     quad_sim(x_coeffs, y_coeffs, z_coeffs)
 
 
