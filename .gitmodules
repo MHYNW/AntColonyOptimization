@@ -1,0 +1,3 @@
+[submodule "ant-colony-optimization"]
+	path = ant-colony-optimization
+	url = https://github.com/pjmattingly/ant-colony-optimization.git
