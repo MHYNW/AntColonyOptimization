@@ -28,8 +28,9 @@ def distance(start, end):
 	return math.sqrt(pow(x_distance, 2) + pow(y_distance, 2))
 
 # we can make a colony of ants
-colony = ant_colony(test_nodes, distance)
+colony = ant_colony.ant_colony(test_nodes, distance)
 
 # that will find the optimal solution with ACO
 answer = colony.mainloop()
 
+print(answer)
