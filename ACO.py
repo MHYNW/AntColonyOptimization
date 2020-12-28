@@ -10,7 +10,7 @@ Author: MHYNW
 
 import sys
 sys.path.append("/Users/mhyyyunwoo/Workspace/AntColonyOptimization/ant-colony-optimization")
-import ant_colony
+import ant_colony_prac
 import math
 from enum import Enum
 import numpy as np
@@ -28,7 +28,7 @@ def distance(start, end):
 	return math.sqrt(pow(x_distance, 2) + pow(y_distance, 2))
 
 # we can make a colony of ants
-colony = ant_colony.ant_colony(test_nodes, distance)
+colony = ant_colony_prac.ant_colony(test_nodes, distance)
 
 # that will find the optimal solution with ACO
 answer = colony.mainloop()
