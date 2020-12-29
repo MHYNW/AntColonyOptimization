@@ -1,3 +1,6 @@
 [submodule "ant-colony-optimization"]
 	path = ant-colony-optimization
 	url = https://github.com/pjmattingly/ant-colony-optimization.git
+[submodule "aco_normal"]
+	path = aco_normal
+	url = https://github.com/johnberroa/Ant-Colony-Optimization.git
